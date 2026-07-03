@@ -1,0 +1,124 @@
+<!DOCTYPE html><html lang="en"><head><title>RERWA · About</title><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#1a2350;--ink:#0f1638;--gold:#b8862f;--goldl:#d0a24f;--cream:#F5F3EE;--white:#ffffff;--grey:#5a5f70;--line:#e7e4dc;}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'Inter',sans-serif;color:var(--ink);line-height:1.65;background:var(--white);}
+.serif{font-family:'Cormorant Garamond',Georgia,serif;}
+h1,h2,h3,.wm{font-family:'Cormorant Garamond',Georgia,serif;}
+a{text-decoration:none;color:inherit;}
+.wrap{max-width:1180px;margin:0 auto;padding:0 32px;}
+/* NAV */
+header{position:sticky;top:0;background:rgba(255,255,255,.97);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);z-index:20;}
+nav{display:flex;align-items:center;justify-content:space-between;height:76px;}
+.brand{display:flex;align-items:center;gap:13px;}
+.brand .mk{width:38px;height:27px;}
+.brand .wm{font-size:25px;font-weight:600;letter-spacing:5px;color:var(--navy);}
+.nav-links{display:flex;gap:36px;font-size:15px;font-weight:400;letter-spacing:.3px;}
+.nav-links a{color:var(--ink);padding-bottom:3px;border-bottom:2px solid transparent;transition:.2s;}
+.nav-links a:hover,.nav-links a.active{color:var(--navy);border-color:var(--gold);}
+.btn{display:inline-block;background:var(--navy);color:#fff;padding:12px 26px;border-radius:4px;font-size:14px;letter-spacing:.5px;transition:.2s;}
+.btn:hover{background:var(--ink);}
+.btn.gold{background:var(--gold);} .btn.gold:hover{background:#a2761f;}
+.btn.ghost{background:transparent;border:1.5px solid rgba(255,255,255,.55);color:#fff;}
+.btn.lg{padding:15px 34px;font-size:15px;}
+/* HERO */
+.hero{background:linear-gradient(155deg,var(--navy) 0%,var(--ink) 100%);color:#fff;position:relative;overflow:hidden;}
+.hero:after{content:"";position:absolute;right:-160px;top:-120px;width:560px;height:560px;border-radius:50%;background:radial-gradient(circle,rgba(184,134,47,.22),transparent 68%);}
+.hero .wrap{padding:110px 32px 120px;position:relative;z-index:2;}
+.eyebrow{color:var(--goldl);letter-spacing:4px;font-size:12.5px;font-weight:600;margin-bottom:26px;}
+.hero h1{font-size:62px;line-height:1.08;font-weight:600;max-width:880px;margin-bottom:26px;}
+.hero h1 em{color:var(--goldl);font-style:italic;}
+.hero p{font-size:20px;color:#c9d0e4;max-width:620px;margin-bottom:40px;font-weight:300;}
+.hero .cta{display:flex;gap:16px;flex-wrap:wrap;}
+/* strip */
+.strip{background:var(--cream);border-bottom:1px solid var(--line);}
+.strip .wrap{display:flex;justify-content:center;gap:64px;flex-wrap:wrap;padding:24px 32px;font-family:'Cormorant Garamond',serif;font-size:21px;color:var(--navy);}
+.strip b{color:var(--gold);font-weight:600;}
+/* sections */
+section{padding:92px 0;}
+.sec-eyebrow{color:var(--gold);letter-spacing:3px;font-size:12.5px;font-weight:600;margin-bottom:16px;}
+h2{font-size:42px;font-weight:600;color:var(--navy);line-height:1.15;margin-bottom:22px;max-width:760px;}
+.lead{font-size:18.5px;color:var(--grey);max-width:740px;margin-bottom:50px;font-weight:300;}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:32px;}
+.card{border:1px solid var(--line);border-radius:14px;padding:36px;background:#fff;}
+.card.dark{background:var(--navy);color:#fff;border:none;}
+.card h3{font-size:25px;margin-bottom:12px;color:var(--navy);font-weight:600;}
+.card.dark h3{color:var(--goldl);}
+.card p{color:var(--grey);font-size:15.5px;} .card.dark p{color:#c9d0e4;}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;}
+.pcard{border-radius:14px;overflow:hidden;background:var(--navy);color:#fff;padding:34px 30px;position:relative;}
+.pcard .tag{font-family:'Cormorant Garamond',serif;font-size:23px;font-weight:600;color:var(--goldl);margin-bottom:12px;}
+.pcard p{color:#c9d0e4;font-size:14.5px;}
+.cream{background:var(--cream);}
+.center{text-align:center;} .center h2,.center .lead{margin-left:auto;margin-right:auto;}
+/* band */
+.band{background:linear-gradient(120deg,var(--gold),#8f6820);color:#fff;text-align:center;}
+.band .wrap{padding:76px 32px;}
+.band h2{color:#fff;margin:0 auto 16px;}
+.band p{color:#f6ecda;max-width:560px;margin:0 auto 32px;font-size:18px;font-weight:300;}
+.band .btn{background:#fff;color:var(--navy);font-weight:600;}
+/* footer */
+footer{background:var(--ink);color:#9aa3be;}
+footer .wrap{padding:56px 32px 40px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:32px;}
+footer .fbrand .wm{font-family:'Cormorant Garamond',serif;font-size:24px;letter-spacing:4px;color:#fff;margin-bottom:8px;display:flex;align-items:center;gap:11px;}
+footer .fbrand .mk{width:32px;height:23px;}
+footer .fcol h4{color:#fff;font-size:13px;letter-spacing:2px;margin-bottom:14px;font-weight:600;}
+footer .fcol a{display:block;color:#9aa3be;font-size:14px;margin-bottom:9px;}
+footer .fcol a:hover{color:var(--goldl);}
+.copyright{border-top:1px solid rgba(255,255,255,.1);text-align:center;padding:20px;font-size:13px;color:#7a83a0;}
+/* about page */
+.pagehead{background:var(--navy);color:#fff;}
+.pagehead .wrap{padding:80px 32px 74px;}
+.pagehead h1{font-size:52px;font-weight:600;margin-bottom:14px;}
+.pagehead p{color:#c9d0e4;font-size:19px;max-width:640px;font-weight:300;}
+.prose{max-width:760px;} .prose p{font-size:17px;color:#33384a;margin-bottom:20px;}
+.values{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:14px;}
+.vrow{display:flex;gap:14px;align-items:flex-start;padding:16px;border:1px solid var(--line);border-radius:10px;}
+.vrow .l{font-family:'Cormorant Garamond',serif;font-size:30px;font-weight:700;color:var(--gold);line-height:1;min-width:26px;}
+.vrow b{color:var(--navy);} .vrow span{color:var(--grey);font-size:14px;}
+/* programs list */
+.plist{display:flex;flex-direction:column;gap:22px;}
+.prow{display:grid;grid-template-columns:200px 1fr;gap:28px;border:1px solid var(--line);border-radius:14px;padding:30px 34px;align-items:start;}
+.prow .k{font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:600;color:var(--navy);}
+.prow .k span{display:block;font-family:'Inter';font-size:12px;letter-spacing:2px;color:var(--gold);margin-top:6px;font-weight:600;}
+.prow p{color:var(--grey);font-size:15.5px;}
+/* contact */
+.cgrid{display:grid;grid-template-columns:1fr 1fr;gap:44px;}
+.field{margin-bottom:18px;} .field label{display:block;font-size:13px;color:var(--navy);font-weight:600;margin-bottom:6px;letter-spacing:.3px;}
+.field input,.field textarea{width:100%;border:1px solid var(--line);border-radius:8px;padding:13px 15px;font-family:'Inter';font-size:15px;color:var(--ink);}
+.field input:focus,.field textarea:focus{outline:none;border-color:var(--gold);}
+.cinfo .item{margin-bottom:26px;} .cinfo .item h4{color:var(--navy);font-size:15px;margin-bottom:5px;} .cinfo .item p{color:var(--grey);font-size:15px;}
+.tabnote{background:var(--cream);border:1px dashed var(--gold);border-radius:10px;padding:14px 18px;font-size:13.5px;color:#7a5f22;margin:22px 0;}
+@media(max-width:860px){.two,.grid3,.cgrid,.values{grid-template-columns:1fr;}.prow{grid-template-columns:1fr;}.nav-links{display:none;}.hero h1{font-size:44px;}h2{font-size:32px;}}
+</style></head><body><header><div class="wrap"><nav>
+<a class="brand" href="index.html"><svg class="mk" viewBox="0 0 800 560" xmlns="http://www.w3.org/2000/svg" aria-label="RERWA mark"><path fill="#1a2350" d="M400 170 L620 430 L560 430 L400 240 L240 430 L180 430 Z"/><path fill="#b8862f" d="M400 320 L560 510 L500 510 L400 390 L300 510 L240 510 Z"/></svg><span class="wm">RERWA</span></a>
+<div class="nav-links"><a href="index.html">Home</a><a href="about.html" class="active">About</a><a href="programs.html">Programs</a><a href="contact.html">Contact</a></div>
+<a class="btn gold" href="contact.html">Work with us</a>
+</nav></div></header>
+<div class="pagehead"><div class="wrap"><div class="eyebrow">ABOUT RERWA</div><h1>A company built to raise people.</h1><p>RERWA exists to help people discover purpose, lead with clarity, and contribute with intention.</p></div></div>
+<section><div class="wrap"><div class="prose">
+<div class="sec-eyebrow">OUR NAME</div><h2>From <span class="serif" style="font-style:italic">kurera</span> — to raise.</h2>
+<p>RERWA is the imperative form of the Kinyarwanda verb <em>kurera</em>, “to raise.” It is a commanding invitation: <b>“Be raised.”</b> No one is ever too accomplished to be taught, too established to be challenged, or too experienced to be formed.</p>
+<p>RERWA Co. stands for RERWA Collective — a deliberate gathering of programs aimed at holistic transformation across individuals, families, organisations, and nations.</p>
+</div></div></section>
+<section class="cream"><div class="wrap">
+<div class="sec-eyebrow">WHAT WE BELIEVE</div><h2>Purpose is not a gift for a rare few.</h2>
+<p class="lead">It is formed over time — on the right foundations, through the right questions, in the right community. And purpose and performance are not in tension: when people understand why their work matters, they bring more of themselves, and the results follow.</p>
+<div class="two">
+<div class="card"><h3>Our mission</h3><p>To transform potential into purpose and unlock possibilities for meaningful contribution and lasting impact.</p></div>
+<div class="card dark"><h3>Our vision</h3><p style="font-family:'Cormorant Garamond',serif;font-size:22px;color:#fff;">Principled people. Meaningful lives.</p></div>
+</div></div></section>
+<section><div class="wrap">
+<div class="sec-eyebrow">OUR VALUES</div><h2>The PRINCIPLED framework</h2>
+<p class="lead">Not aspirations on a wall — the operating system we form in ourselves first.</p>
+<div class="values">
+<div class="vrow"><div class="l">P</div><div><b>Purposeful</b><br><span>Rooted in why, not just what</span></div></div><div class="vrow"><div class="l">R</div><div><b>Responsibility</b><br><span>Ownership of our impact</span></div></div><div class="vrow"><div class="l">I</div><div><b>Integrity</b><br><span>Whole and consistent</span></div></div><div class="vrow"><div class="l">N</div><div><b>Nurturing</b><br><span>We raise, we don’t just instruct</span></div></div><div class="vrow"><div class="l">C</div><div><b>Community</b><br><span>Formed together, not alone</span></div></div><div class="vrow"><div class="l">I</div><div><b>Innovation</b><br><span>New ways to form and serve</span></div></div><div class="vrow"><div class="l">P</div><div><b>Persistence</b><br><span>Formation takes time</span></div></div><div class="vrow"><div class="l">L</div><div><b>Learning</b><br><span>Always still being raised</span></div></div><div class="vrow"><div class="l">E</div><div><b>Excellence</b><br><span>Worthy of the mission</span></div></div><div class="vrow"><div class="l">D</div><div><b>Discipline</b><br><span>Turning intention into rhythm</span></div></div>
+</div></div></section>
+<div class="band"><div class="wrap"><h2>Walk with us</h2><p>Whether you lead a school, a team, or your own life — there is a place for you in this work.</p><a class="btn lg" href="contact.html">Start a conversation</a></div></div>
+<footer><div class="wrap">
+<div class="fbrand"><div class="wm"><svg class="mk" viewBox="0 0 800 560" xmlns="http://www.w3.org/2000/svg" aria-label="RERWA mark"><path fill="#ffffff" d="M400 170 L620 430 L560 430 L400 240 L240 430 L180 430 Z"/><path fill="#b8862f" d="M400 320 L560 510 L500 510 L400 390 L300 510 L240 510 Z"/></svg>RERWA</div><div style="font-family:'Cormorant Garamond',serif;font-style:italic;color:#c9a24f;">Principled people. Meaningful lives.</div></div>
+<div class="fcol"><h4>EXPLORE</h4><a href="about.html">About</a><a href="programs.html">Programs</a><a href="contact.html">Contact</a></div>
+<div class="fcol"><h4>CONTACT</h4><a>Kigali, Rwanda</a><a>hello@rerwa.co.rw</a></div>
+</div><div class="copyright">© 2026 RERWA Co. Ltd · Principled people. Meaningful lives.</div></footer></body></html>
